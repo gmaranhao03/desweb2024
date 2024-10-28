@@ -1,0 +1,47 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; 
+    margin: 0;
+    background-color: #f0f0f0; 
+}
+
+#container {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.atleta-card {
+    display: flex;
+     
+     
+    max-width: 200px; 
+    text-align: center; 
+}
+
+.atleta-card img {
+    
+     
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+#container h1 {
+    font-size: 1.2rem;
+    color: #333;
+    margin: 10px 0 5px 0; 
+}
+
+#container p {
+    font-size: 0.9rem; 
+    color: #666;
+    margin: 0; 
+}
+article{
+    width:300px;
+}
+img{
+    width:100%;
+}
