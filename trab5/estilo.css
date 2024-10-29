@@ -1,0 +1,40 @@
+.grid-container {
+    display: grid;
+    grid-template: 
+    "a"
+    "b"
+    "c";
+    gap: 10px;
+    background-color: #2196F3;
+    padding: 10px;
+}
+
+.grid-container > div {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+}
+
+.item1{
+    grid-area: a;
+}
+
+.item2{
+    grid-area: b;
+}
+
+.item3{
+    grid-area: c;
+}
+
+@media screen and (min-width: 768px) {
+    .grid-container{
+        grid-template:
+        "a a a x"
+        "c o b b"
+        "c o b b";
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+    
+}
