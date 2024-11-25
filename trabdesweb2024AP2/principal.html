@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="icon" type="image/x-icon" href="./botafogo.png">
+        <title>Lista de JOGADORES</title>
+        <link rel="stylesheet" href="./estilo.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+            rel="stylesheet"
+        />
+    </head>
+    <body>
+        <header id="header">
+            <div>
+                <h2>Atletas do Botafogo</h2>
+            </div>
+            <div class="div-btns">
+                <button id="todos" class="navegacao" onclick="carregar('all')">
+                    Todos
+                </button>
+                <button
+                    id="feminino"
+                    class="navegacao"
+                    onclick="carregar('feminino')"
+                >
+                    Feminino
+                </button>
+                <button
+                    id="masculino"
+                    class="navegacao"
+                    onclick="carregar('masculino')"
+                >
+                    Masculino
+                </button>
+            </div>
+            <div class="div-select">
+                <select id="select-elenco">
+                    <option value="" disabled="">Escolha o elenco</option>
+                    <option value="all">Todos</option>
+                    <option value="feminino">Feminino</option>
+                    <option value="masculino">Masculino</option>
+                </select>
+            </div>
+            <div>
+                <button type="button" class="sair" onclick="sair()">
+                    Sair
+                </button>
+            </div>
+        </header>
+
+        <div id="text">
+            <p>Escolha o elenco que deseja ver</p>
+        </div>
+
+        <div class="pesquisa">
+            <input type="search" id="filtro" placeholder="Pesquisar jogador" />
+        </div>
+        <div id="elenco"></div>
+        <script type="text/javascript" src="./scripts.js"></script>
+    </body>
+</html>

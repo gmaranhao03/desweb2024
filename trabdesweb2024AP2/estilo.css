@@ -1,0 +1,305 @@
+body {
+  margin: 0px;
+  font-family: "Roboto", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Alumni Sans Inline One", sans-serif;
+  font-weight: normal;
+}
+
+#container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: normal;
+  height: 98vh;
+}
+#body-bg{
+  background-size: cover;
+  background-image: url('./imagem.jpg');
+}
+
+.div-logo,
+.login {
+  width: 50%;
+}
+
+.div-logo {
+  float: left;
+  display: flex;
+  justify-content: center;
+}
+
+
+.login {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: rgb(201 201 201 / 76%)
+}
+
+.login > #div-input {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#header {
+  background-color: #000;
+  color: #fff;
+  width: 100%;
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  border-bottom: 1px solid #fff;
+}
+
+#header div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20%;
+}
+#header .div-select {
+  display: none;
+  margin: auto;
+}
+#header .div-select select {
+  background-color: black;
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  padding: 10px;
+  display: block;
+}
+
+.sair {
+  background-color: #fff;
+  border: none;
+  color: #000;
+  text-align: center;
+  text-decoration: none;
+  padding: 1.5em 2em;
+  cursor: pointer;
+  font-weight: bolder;
+  border-radius: 10px;
+}
+
+.card {
+  background: linear-gradient(135deg, #222, #444);
+  color: #fff;
+  width: 200px;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+  position: relative;
+  padding: 20px;
+}
+
+.dvTitulo{
+  height: 100px !important;
+}
+
+.card h3 {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.img-jogador {
+  margin: 20px auto;
+  width: inherit;
+  max-width: 250px;
+  height: auto;
+  border-radius: 10px;
+  border: 3px solid #fff;
+  background: #000;
+}
+
+.card h4 {
+  height: 2em;
+  margin: 0px;
+  font-size: 1rem;
+  font-weight: normal;
+  color: #000;
+  background: linear-gradient(135deg, #b07a32, #F9EB83) ;
+  cursor: pointer;
+  text-transform: uppercase;
+  align-content: center;
+}
+  
+.card h4:hover {
+  text-decoration: underline;
+  color: #fff;
+}
+.navegacao {
+  background-color: transparent;
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  padding: 0.5em 1em;
+  cursor: pointer;
+  margin: 10px;
+  border-bottom: 1px solid #fff;
+  text-transform: uppercase;
+}
+
+.div-btns {
+  margin: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#elenco {
+  display: grid;
+  gap: 1em;
+  max-width: 1200px;
+  margin: 0 auto;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.pesquisa{
+  width: 250px;
+  margin: 0 auto;
+}
+
+.pesquisa>input {
+  width: 250px;
+  height: 2.5em;
+  margin-bottom: 20px;
+}
+
+#text {
+  display: flex;
+  color: #000;
+  justify-content: center;
+}
+
+.img-jogador{
+  width: inherit;
+}
+.player {
+  width: min-content;
+  margin: 0 auto;
+  text-align: center;
+  background-color: grey;
+  padding: 0.5em;
+  cursor: pointer;
+  border-radius: 30px;
+}
+
+.jogador {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 20px;
+  padding: 1em;
+  color:#fff;
+  max-width: 1200px;
+  margin: 20px auto;
+  background: linear-gradient(135deg, #222, #444);
+}
+
+
+.jogador a {
+  text-decoration: none;
+  background: white;
+  display: block;
+  width: fit-content;
+  padding: 10px;
+  border-radius: 5px;
+  font-weight: 500;
+}
+
+.jogador a:visited {
+  color: #000;
+}
+
+/* card {  */
+
+#foto-jogador {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 0 1em 1em 1em;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  font-size: 24px;
+  margin-top: 10px;
+}
+
+.footer a {
+  text-decoration: none;
+  font-weight: 600;
+  color: white;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #222, #444);
+  display: block;
+  padding: 10px;
+}
+
+@media (max-width: 1024px) {
+  #elenco {
+    grid-template-columns: 2fr 2fr;
+    margin: 20px;
+  }
+}
+
+@media (max-width: 968px) {
+  .logo {
+    width: 400px;
+    height: 500px;
+  }
+}
+
+  @media (max-width: 768px) {
+    #container {
+      display: flex;
+      align-items: center;
+      flex-direction: column-reverse;
+    }
+    #img-jogador{
+      display: none;
+    }
+    #elenco {
+      justify-content: center;
+      grid-template-columns: 0fr;
+    }
+
+    #header .div-btns {
+      display: none;
+    }
+
+    #header .div-select {
+      display: block;
+    }
+
+    #header .div-btns {
+      display: none;
+    }
+
+    #header .div-select {
+      display: block;
+    }
+    .jogador {
+      flex-direction: column;
+    }
+
+
+}
